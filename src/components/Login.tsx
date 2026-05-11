@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { LogIn, Lock, User, Sparkles } from 'lucide-react';
 import { cn } from '../lib/utils';
-import YourLogo from 'public/logo.png'; // Pastikan path filenya benar
 
 interface LoginProps {
   onLogin: () => void;
@@ -48,7 +47,7 @@ export default function Login({ onLogin }: LoginProps) {
           <div className="flex flex-col items-center mb-8">
             <div className="w-20 h-20 mb-4"> {/* Anda bisa atur ukuran w dan h di sini */}
               <img 
-                src={YourLogo} 
+                src="/logo.png" 
                 alt="Logo TM Generator" 
                 className="w-full h-full object-contain" 
               />
